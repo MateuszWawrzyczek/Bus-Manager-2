@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+main {
+  margin-top: 20px; /* Przestrzeń od góry, poniżej menu */
+  padding: 20px; /* Odstępy wewnętrzne dla lepszej czytelności */
+  background-color: #f9f9f9; /* Opcjonalnie, tło dla sekcji */
+  border-radius: 8px; /* Zaokrąglone rogi, jeśli chcesz estetyki */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #000000;
+}
+
+
+/* Stylizacja kontenera nawigacji */
+header {
+  background-color: #3AA664; /* Kolor tła menu */
+  padding: 10px 0; /* Odstęp góra-dół */
+  border-bottom: 1px solid #3AA664; /* Delikatna linia u dołu */
+}
+
+/* Lista elementów menu */
+/* Stylizacja kontenera menu */
+/* Kontener menu */
+.menu {
+  display: flex; /* Elementy w jednej linii */
+  justify-content: space-around; /* Równomierne rozmieszczenie */
+  align-items: center; /* Wyrównanie pionowe */
+  background-color: white; /* Tło menu */
+  padding: 10px 20px; /* Odstęp od krawędzi */
+  border-bottom: 2px solid #ddd; /* Linia pod menu */
+  font-family: Arial, sans-serif; /* Czytelna czcionka */
+  font-size: 16px; /* Wielkość tekstu */
+}
+
+/* Linki w menu */
+.menu a {
+  text-decoration: none; /* Brak podkreślenia */
+  color: #333; /* Neutralny kolor */
+  padding: 5px 15px; /* Odstępy wokół tekstu */
+  transition: all 0.3s ease; /* Efekt hover */
+}
+
+/* Efekt hover dla linków */
+.menu a:hover {
+  color: #007bff; /* Zmiana koloru na hover */
+  text-decoration: underline; /* Podkreślenie na hover */
+}
+
+/* Styl responsywny dla mniejszych ekranów */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Układ pionowy dla małych ekranów */
+    padding: 20px 0; /* Więcej odstępu */
+  }
+  .menu a {
+    padding: 10px 0; /* Większe odstępy między linkami */
+  }
+}
+
+
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
