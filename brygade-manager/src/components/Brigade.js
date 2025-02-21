@@ -4,11 +4,10 @@ import axios from "axios";
 const BrigadesTable = () => {
   const [workingTime, setWorkingTime] = useState("");
   const [brigades, setBrigades] = useState([]);
-  const [trips, setTrips] = useState([]); // Lista wszystkich kursów
+  const [trips, setTrips] = useState([]); 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Pobieranie wszystkich kursów przy załadowaniu komponentu
   useEffect(() => {
     const fetchTrips = async () => {
       try {
@@ -30,7 +29,6 @@ const BrigadesTable = () => {
     fetchTrips();
   }, []);
 
-  // Funkcja do pobierania brygad na podstawie czasu pracy
   const fetchBrigades = async () => {
     if (!workingTime || workingTime <= 0) {
       alert("Please enter a valid working time.");

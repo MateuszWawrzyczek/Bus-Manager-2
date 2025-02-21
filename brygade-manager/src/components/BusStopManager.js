@@ -15,7 +15,6 @@ const StopManager = () => {
   const [addError, setAddError] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
   const [editedStops, setEditedStops] = useState({});
-  //const navigate = useNavigate();
 
   useEffect(() => {
     fetchStops();

@@ -14,7 +14,6 @@ const TypeOfDaysManager = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [editedTypes, setEditedTypes] = useState({});
 
-  // Pobieranie typów dni z backendu
   useEffect(() => {
     fetchTypesOfDays();
   }, []);
@@ -38,7 +37,6 @@ const TypeOfDaysManager = () => {
     }
   };
 
-  // Dodawanie nowego typu dnia
   const addTypeOfDay = async (newTypeName) => {
     if (!newTypeName.trim()) return;
 
@@ -51,7 +49,6 @@ const TypeOfDaysManager = () => {
     }
   };
 
-  // Usuwanie typu dnia
   const deleteTypeOfDay = async (id) => {
     try {
       await axios.delete(`http://localhost:5057/api/TypeOfDays/${id}`);
@@ -87,7 +84,6 @@ const TypeOfDaysManager = () => {
     }
   };
 
-  // Obsługa zmiany pola edycji
   const handleEditChange = (id, value) => {
     setEditedTypes((prev) => ({ ...prev, [id]: value }));
   };

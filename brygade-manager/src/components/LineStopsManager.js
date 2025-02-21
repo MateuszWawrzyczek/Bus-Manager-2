@@ -109,7 +109,6 @@ import axios from "axios";
       return result;
     };
   
-    // Walidacja formularza
     const validate = (values) => {
       const errors = {};
       if (!values.directions || values.directions.length === 0) {

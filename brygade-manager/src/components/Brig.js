@@ -9,7 +9,6 @@ const BrigadesTable = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Pobieranie wszystkich kursów przy załadowaniu komponentu
   useEffect(() => {
     const fetchTrips = async () => {
       try {
@@ -31,7 +30,6 @@ const BrigadesTable = () => {
     fetchTrips();
   }, []);
 
-  // Funkcja do pobierania brygad na podstawie czasu pracy
   const fetchBrigades = async () => {
     if (!workingTime || workingTime <= 0) {
       alert("Please enter a valid working time.");
@@ -58,17 +56,16 @@ const BrigadesTable = () => {
     }
   };
 
-  // Funkcja do wyświetlania szczegółów kursu na podstawie tripId
   const showTripDetails = (tripId) => {
-    const trip = trips.find((t) => t.tripId === tripId); // Szukamy kursu w lokalnej liście
-    setSelectedTrip(trip || null); // Ustawiamy szczegóły kursu lub null, jeśli nie znaleziono
+    const trip = trips.find((t) => t.tripId === tripId); 
+    setSelectedTrip(trip || null); 
   };
 
   return (
     <div>
       <h1>Brigades Table</h1>
 
-      {/* Pole do wpisywania czasu pracy */}
+
       <div>
         <label htmlFor="workingTime">Working Time:</label>
         <input
@@ -82,7 +79,6 @@ const BrigadesTable = () => {
         </button>
       </div>
 
-      {/* Tabela brygad */}
       {error && <p style={{ color: "red" }}>{error}</p>}
       {brigades.length > 0 && (
         <table border="1" style={{ marginTop: "20px", width: "100%" }}>
@@ -122,7 +118,6 @@ const BrigadesTable = () => {
         </table>
       )}
 
-      {/* Szczegóły wybranego kursu */}
       {selectedTrip && (
         <div style={{ marginTop: "20px", border: "1px solid black", padding: "10px" }}>
           <h2>Trip Details</h2>

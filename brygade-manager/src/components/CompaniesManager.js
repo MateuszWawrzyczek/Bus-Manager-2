@@ -131,7 +131,6 @@ const Companies = () => {
         </tbody>
       </table>
 
-      {/* Form to add a new company */}
       <div className="mt-4">
         <h2 className="text-xl font-bold mb-2">Dodaj Nową Firmę</h2>
         <div className="mb-2">
