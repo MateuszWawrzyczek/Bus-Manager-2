@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("brygady")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d9ad55db51aec0b722e1ff3ce369f413750152a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d88f963bcc0715e374bf570433f4a5c0bcc3a6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("brygady")]
 [assembly: System.Reflection.AssemblyTitleAttribute("brygady")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
